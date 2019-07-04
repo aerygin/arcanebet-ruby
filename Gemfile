@@ -7,6 +7,8 @@ gem 'omniauth-google-oauth2'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'httparty'
+
 
 
 

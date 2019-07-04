@@ -1,11 +1,15 @@
-<h4>start page</h4>
-
 <% if current_user %>
- <div>hello,</div> <%= current_user.name %>
- <% end %>
-
-<% unless current_user %>
-  <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
-<% else %>
-  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+  <script type="text/javascript">
+      window.location.href = "/home"  // put your correct path in a string here
+  </script>
 <% end %>
+<div class="container">
+  <div class="wrapper">
+    <h2>Welcome to exchange rate app!</h2>
+    <div class="sign-in-button-wrapper">
+      <% unless current_user %>
+        <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path, :class => "sign-in-button" %>
+      <% end %>
+    </div>
+  </div>
+</div>

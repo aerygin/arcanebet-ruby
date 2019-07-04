@@ -13,3 +13,43 @@
 
  */
 @import "bootstrap";
+
+.sign-in-button {
+  border: none;
+  border-radius: 23px;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+  cursor: pointer;
+  background-color: #EA4A72;
+  padding: 15px 45px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 28px;
+  min-width: 180px;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity .2s;
+  user-select: none;
+  color: #ffffff;
+}
+
+.sign-in-button :hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.sign-in-button-wrapper {
+  margin-top: 50px;
+}
+
+.menu-item {
+  color :#fff;
+  margin-right: 10px;
+}
