@@ -1,0 +1,15 @@
+current directory: /home/artjomj/arcane/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190704-11000-qsizkk.rb extconf.rb
+creating Makefile
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20190704-11000-9s3a5y

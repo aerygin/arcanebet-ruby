@@ -1,0 +1,11 @@
+<h4>start page</h4>
+
+<% if current_user %>
+ <div>hello,</div> <%= current_user.name %>
+ <% end %>
+
+<% unless current_user %>
+  <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+<% else %>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+<% end %>

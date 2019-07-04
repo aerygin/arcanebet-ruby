@@ -1,0 +1,15 @@
+current directory: /home/artjomj/arcane/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190704-11000-vx7htm.rb extconf.rb
+creating Makefile
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190704-11000-o8i2v2/skiptrace
