@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="wrapper">
+    <h4>Edit your currencies and amount</h4>
+    <%=form_for :rate, url: rate_path(@rate), method: :patch do |f| %>
+      <% if @rate.errors.any? %>
+        <% @rate.errors.full_messages.each do |msg| %>
+          <div class="alert alert-danger">
+            <%= msg %>
+          </div>
+        <% end %>
+      <% end %>
+      <p>
+        <%=f.label :base_currency %><br>
+        <%= select_tag :base_currency, options_for_select(Rate::AVAILABLE_CURRENCIES), {:class => "form-control"} %>
+      </p>
+      <p>
+        <%=f.label :target_currency %><br>
+        <%= select_tag :target_currency, options_for_select(Rate::AVAILABLE_CURRENCIES), {:class => "form-control"} %>
+      </p>
+      <p>
+        <%=f.label :amount %><br>
+        <%=f.text_field :amount , {:class => "form-control"} %>
+      </p>
+      <p class="submit-p">
+        <%=f.submit 'SAVE' ,:class => "btn btn-success app-btn"  %>
+      </p>
+    <% end %>
+  </div>
+</div>

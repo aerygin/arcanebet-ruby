@@ -14,6 +14,14 @@
  */
 @import "bootstrap";
 
+
+.app-btn {
+  padding: 7px 45px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
 .sign-in-button {
   border: none;
   border-radius: 23px;
@@ -35,7 +43,12 @@
 }
 
 .sign-in-button :hover {
-  text-decoration: none;
+  background-color: red;
+}
+
+.submit-p {
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
@@ -51,5 +64,11 @@
 
 .menu-item {
   color :#fff;
-  margin-right: 10px;
+  margin: 0 10px;
+}
+
+.menu-img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
 }

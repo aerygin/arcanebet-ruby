@@ -1,6 +1,7 @@
 class RatesController < ApplicationController
   def index
     @rates = Rate.all
+    redirectToHome
   end
 
   def show
