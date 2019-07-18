@@ -1,7 +1,11 @@
 <div class="container">
   <div class="wrapper">
-    <h4>Please select your currencies and amount</h4>
-    <%= form_for :rate, url: rates_path do |f| %>
+    <div class="header">
+      <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
+      <h2>Please select your currencies and amount</h2>
+    </div>
+    <div class="form-wrapper">
+      <%= form_for :rate, url: rates_path do |f| %>
       <% if @rate.errors.any? %>
         <% @rate.errors.full_messages.each do |msg| %>
           <div class="alert alert-danger">
@@ -19,11 +23,18 @@
       </p>
       <p>
         <%= f.label :amount %><br>
-        <%= f.text_field :amount, {:class => "form-control"} %>
+        <%= f.text_field :amount, placeholder: "Amount of base currency" , :class => "form-control" %>
       </p>
-      <p class="submit-p">
+
+        <p>
+          <%= f.label :weeks %><br>
+          <%= f.text_field :weeks, placeholder: "Number of weeks to count", :class => "form-control" %>
+        </p>
+
+        <p class="submit-p">
         <%= f.submit 'SAVE', :class => "btn btn-success app-btn" %>
       </p>
     <% end %>
+    </div>
   </div>
 </div>

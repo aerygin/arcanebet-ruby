@@ -1,0 +1,13 @@
+current directory: /home/artjomj/arcane/vendor/bundle/gems/json-2.2.0/ext/json
+/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190718-22851-1b0gkcn.rb extconf.rb
+creating Makefile
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/artjomj/arcane/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

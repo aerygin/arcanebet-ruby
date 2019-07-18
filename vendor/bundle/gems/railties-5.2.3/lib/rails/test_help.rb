@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 # frozen_string_literal: true
 
 # Make double-sure the RAILS_ENV is not set to production,

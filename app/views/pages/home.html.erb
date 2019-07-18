@@ -10,12 +10,12 @@
     <% if @loading %>
     <div>Loading ...</div>
     <% end %>
-  <%=@hot %>
-    <% @arr.each do |item| %>
-      <%= item %>
+    <% @result.each_with_index do |item ,index| %>
+      <div><%=index + 1%> <%= item %></div>
     <% end %>
   </div>
   <hr>
+
 </div>
 
 
