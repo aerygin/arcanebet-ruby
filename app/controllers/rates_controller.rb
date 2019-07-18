@@ -6,6 +6,7 @@ class RatesController < ApplicationController
   end
 
   def show
+    puts 'test'
     @result = []
     @rate = Rate.find(params[:id])
     access_key = '69a46a5b9ca5029a744162e772a6532f'
