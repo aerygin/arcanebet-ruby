@@ -33,7 +33,7 @@ class RatesController < ApplicationController
 
     @result = @result.sort { |b, a| a['date'] <=> b['date'] }
     find_rates(@result, target)
-
+    @result_collection_for_chart = @result.collect {|i| [i["date"], i["rates"][@rate.target_currency]]}
   end
 
   def new

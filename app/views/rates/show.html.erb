@@ -40,7 +40,7 @@
       </tbody>
     </table>
     <div style="margin-top: 30px"></div>
-    <%= line_chart @result.collect {|i| [i["date"], i["rates"][@rate.target_currency]]} %>
+    <%= line_chart @result_collection_for_chart%>
     <div style="margin-top: 30px"></div>
   </div>
 </div>
