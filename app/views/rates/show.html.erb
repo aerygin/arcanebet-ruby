@@ -33,7 +33,7 @@
           <td class="<%= difference > 0 ? 'profit' : 'loss' %>
                     <%= 'neutral' if rate== @today_rate %>"
           >
-            <%= rate== @today_rate? "---" : difference %>
+            <%= rate== @today_rate? "---" : number_with_precision(difference, :precision => 2) %>
           </td>
         </tr>
       <% end %>
