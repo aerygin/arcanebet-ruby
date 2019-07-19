@@ -31,9 +31,9 @@
           <td><%= item["converted_amount"] %></td>
           <% difference = item["converted_amount"].to_f - (@today_rate * @rate.amount) %>
           <td class="<%= difference > 0 ? 'profit' : 'loss' %>
-                    <%= 'neutral' if difference == 0 %>"
+                    <%= 'neutral' if rate== @today_rate %>"
           >
-            <%= difference == 0 ? "---" : difference %>
+            <%= rate== @today_rate? "---" : difference %>
           </td>
         </tr>
       <% end %>
