@@ -17,8 +17,6 @@ c
 0db/migrate/20190704094712_devise_create_users.rb,4/a/4a4201a2caede9e0fdc32af7ab27d259b76bc5e8
 f
 6app/controllers/users/omniauth_callbacks_controller.rb,d/f/dfb4348179c91e7d1da0b9c149bbe7673ee1f3b8
-M
-app/views/pages/edit.html.erb,8/0/80e60dc482ce2aafb0f684929533065bec5ba2f6
 @
 config/routes.rb,e/8/e801163eb9182955dca3eb9817d59af634f6665d
 N
@@ -33,8 +31,6 @@ Ivendor/bundle/gems/chartkick-3.2.1/vendor/assets/javascripts/chartkick.js,8/2/
 Yvendor/bundle/gems/bootstrap-4.0.0/test/dummy_rails/app/assets/javascripts/application.js,6/e/6ef8bb2675dd7604609ac6848b95f0d73197a60f
 S
 #app/controllers/pages_controller.rb,d/e/de75c9a3761b5afbbb0c46979f84da923c3afb8f
-M
-app/views/pages/home.html.erb,1/4/1494e435644e7f0027a6dda026635ea91fd8737f
 V
 &app/views/layouts/application.html.erb,e/8/e82294e631b91cb53fe2e362dfd3b8e4a3924ae2
 M

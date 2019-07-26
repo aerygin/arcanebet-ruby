@@ -1,14 +1,14 @@
 <div class="container">
-  <div class="wrapper">
-    <div class="header">
-      <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
-      <h2><%= @rate.base_currency %> to <%= @rate.target_currency %> (amount : <%= @rate.amount %>)</h2>
-    </div>
+  <div class="show-header">
+    <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
+    <h2><%= @rate.base_currency %> to <%= @rate.target_currency %> (amount : <%= @rate.amount %>)</h2>
+  </div>
+  <div class="show-wrapper">
     <table class="table">
-      <thead>
+      <thead class="table-header">
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Year</th>
+        <th scope="col">Date</th>
         <th scope="col">Week number</th>
         <th scope="col">Exchange rate</th>
         <th scope="col">Amount</th>
@@ -18,22 +18,33 @@
       <tbody>
       <% @result.each_with_index do |item, index| %>
 
-        <tr>
+        <tr class="tableRow">
           <% rate = item["rates"][@rate.target_currency] %>
-          <th scope="row"><%= index + 1 %></th>
-          <td><%= item["year"] %></td>
-          <td><%= item["week_nr"] %></td>
-          <td class="<%= 'max-rate' if rate == @max_rate %>
-                     <%= 'min-rate' if rate == @min_rate %>"
-          >
-            <%= item["rates"][@rate.target_currency] %>
+          <td>
+            <span class="mobile-span">#</span>
+            <span> <%= index + 1 %></span>
           </td>
-          <td><%= item["converted_amount"] %></td>
+          <td>
+            <span class="mobile-span">Year</span>
+            <span><%= item["date"] %></span></td>
+          <td>
+            <span class="mobile-span">Week number</span>
+            <span><%= item["week_nr"] %></span>
+          </td>
+          <td class="<%= 'max-rate' if rate == @max_rate %>
+                     <%= 'min-rate' if rate == @min_rate %>">
+            <span class="mobile-span">Exchange rate</span>
+            <span><%= item["rates"][@rate.target_currency] %></span>
+          </td>
+           <td>
+            <span class="mobile-span">Amount</span>
+            <span><%= item["converted_amount"] %></span>
+           </td>
           <% difference = item["converted_amount"].to_f - (@today_rate * @rate.amount) %>
           <td class="<%= difference > 0 ? 'profit' : 'loss' %>
-                    <%= 'neutral' if rate== @today_rate %>"
-          >
-            <%= rate== @today_rate? "---" : number_with_precision(difference, :precision => 2) %>
+                    <%= 'neutral' if rate== @today_rate %>">
+            <span class="mobile-span">Profit/loss</span>
+            <span> <%= rate== @today_rate? "---" : number_with_precision(difference, :precision => 2) %></span>
           </td>
         </tr>
       <% end %>
@@ -44,6 +55,8 @@
     <div style="margin-top: 30px"></div>
   </div>
 </div>
+
+
 
 
 

@@ -4,9 +4,9 @@
     <title>Arcane</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -19,20 +19,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/rates">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link home-full" href="/rates">Home <span class="sr-only">(current)</span></a>
         </li>
       </ul>
-      <div>
+      <div class="main-menu-items">
         <span class="menu-item"> <%= current_user.name %></span>
         <%if current_user.image %>
         <%= image_tag((current_user.image), :class => "menu-img")  %>
         <%end %>
+        <span class="menu-item home-mobile"> <%= link_to "Home", rates_path, :class => "home-mobile" %> </span>
         <span class="menu-item"> <%= link_to "Sign out", destroy_user_session_path, method: :delete , :class => "sign-out" %> </span>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item-active">
-        </li>
-      </ul>
     </div>
   </nav>
     <% end %>

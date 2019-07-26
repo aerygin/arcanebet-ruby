@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/test/models/rate_test.rb" line="13" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b06d85e-8c75-458e-bada-e62900471771" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5b06d85e-8c75-458e-bada-e62900471771" name="Default Changelist" comment="chart collection moved to rates_controller">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/arcane.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09e3205ac60e60e1a917ccf915c3f29159a7a917" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/1494e435644e7f0027a6dda026635ea91fd8737f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/1637dd5207d3586063c883b080a13b0322095524" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f77ed8aa2409b76cf1168d07b5b7b058b7b4791" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2ddb99485c4439b74a4bfdd06fae42c666d6405a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ec22bab7cc24688dadb4576e11fb29fb3c2b7e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/424a7363c4eb04ffd0cb280d3e518fa39e697592" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/431311cbb9902e2a56811443372061424f388e2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a4201a2caede9e0fdc32af7ab27d259b76bc5e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4ed0c03b53dbc8320da88e7887465514cd9e90a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66bfb78f1f4815355af45461f130e9e3f8891a18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ef8bb2675dd7604609ac6848b95f0d73197a60f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80e60dc482ce2aafb0f684929533065bec5ba2f6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/822f4bdcf5b6138d1a057546fac2e7b23d8844d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1fefa8ba3f3f7652f4c613d4a0fda92a67733e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1b707d2c72802138333319c72bcf52be8aa8230" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf225fbccd66d292b76feda96f0852928ebb6af1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d43f13e3048d4041aab09207c44879faaebbd69c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4d0494cfda51a1c342474771d77a9b5d4f0ecfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d97fe563c0d6206296c75ab9b274b06fd9845971" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de3150c01c3a946a6168173c4116741379fe3579" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de75c9a3761b5afbbb0c46979f84da923c3afb8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfb4348179c91e7d1da0b9c149bbe7673ee1f3b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e801163eb9182955dca3eb9817d59af634f6665d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e82294e631b91cb53fe2e362dfd3b8e4a3924ae2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f5258ff1f418865a7ca435e482e4a3289bf72e57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe6ab41f9bf4efb7367670d522633ee7e50de700" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/rates_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rates_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rates/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rates/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rates/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rates/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rates/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rates/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/rates/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rates/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/.keep" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,49 +59,57 @@
     <session id="139631302">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="5" />
-          <entry key="erb" value="36" />
+          <entry key="Gemfile" value="6" />
+          <entry key="bundle" value="1" />
+          <entry key="enc" value="1" />
+          <entry key="erb" value="40" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="6" />
           <entry key="js" value="6" />
-          <entry key="rb" value="56" />
+          <entry key="key" value="1" />
+          <entry key="rb" value="61" />
           <entry key="scss" value="8" />
-          <entry key="xml" value="1" />
-          <entry key="yml" value="6" />
+          <entry key="xml" value="3" />
+          <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="6" />
           <entry key="JavaScript" value="6" />
-          <entry key="RHTML" value="36" />
-          <entry key="Ruby" value="61" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="RHTML" value="40" />
+          <entry key="Ruby" value="68" />
           <entry key="SCSS" value="8" />
-          <entry key="XML" value="1" />
-          <entry key="YAML" value="6" />
+          <entry key="XML" value="3" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="35" />
-          <entry key="erb" value="6200" />
+          <entry key="erb" value="6678" />
+          <entry key="gitignore" value="148" />
           <entry key="html" value="10" />
           <entry key="js" value="2" />
-          <entry key="rb" value="6247" />
-          <entry key="scss" value="780" />
-          <entry key="txt" value="47" />
+          <entry key="rb" value="6382" />
+          <entry key="scss" value="1254" />
+          <entry key="txt" value="91" />
+          <entry key="xml" value="18" />
           <entry key="yml" value="6" />
         </counts>
       </usages-collector>
@@ -69,24 +117,25 @@
         <counts>
           <entry key="HTML" value="10" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="47" />
-          <entry key="RHTML" value="6200" />
-          <entry key="Ruby" value="6282" />
-          <entry key="SCSS" value="780" />
+          <entry key="PLAIN_TEXT" value="239" />
+          <entry key="RHTML" value="6678" />
+          <entry key="Ruby" value="6417" />
+          <entry key="SCSS" value="1254" />
+          <entry key="XML" value="18" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5518087">
+    <splitter split-orientation="horizontal" split-proportion="0.43782192">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/rates/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -96,10 +145,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/rates/new.html.erb">
+            <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+                <state relative-caret-position="435">
+                  <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -107,17 +156,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="407">
+                  <caret line="222" column="1" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Gemfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="283">
+                  <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Gemfile">
+            <entry file="file://$PROJECT_DIR$/config/master.key">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+                <state>
+                  <caret column="32" selection-start-column="32" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="525">
+                  <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -126,11 +193,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/rates_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/rates/new.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -153,11 +229,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/rates/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -165,8 +241,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/rates/edit.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="122" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="122" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -192,6 +268,12 @@
       <find>redirectTo</find>
       <find>times</find>
       <find>arca</find>
+      <find>scope :ac</find>
+      <find>deve</find>
+      <find>.keep</find>
+      <find>bundle</find>
+      <find>require</find>
+      <find>wrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,16 +314,11 @@
         <option value="$PROJECT_DIR$/app/controllers/exchange_rates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/show.html.erb.html" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/vendor/bundle/gems/bootstrap-4.0.0/test/dummy_rails/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/test/system/rates_test.rb" />
-        <option value="$PROJECT_DIR$/app/views/rates/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rates/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rates/new.html.erb" />
         <option value="$PROJECT_DIR$/vendor/bundle/gems/railties-5.2.3/lib/rails/test_help.rb" />
         <option value="$PROJECT_DIR$/test/models/rate_test.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/test/controllers/rates_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
         <option value="$PROJECT_DIR$/app/models/rate.rb" />
@@ -252,10 +329,19 @@
         <option value="$PROJECT_DIR$/app/views/pages/index.html" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages.scss" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/rates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/rates/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rates/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rates/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/rates/index.html.erb" />
       </list>
     </option>
   </component>
@@ -271,7 +357,6 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
     <option name="y" value="25" />
     <option name="width" value="1914" />
     <option name="height" value="1051" />
@@ -282,7 +367,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,7 +453,18 @@
             <path>
               <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
               <item name="arcane" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arcane" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arcane" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
@@ -682,6 +777,29 @@
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
               <item name="bundle" type="462c0819:PsiDirectoryNode" />
               <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.3" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arcane" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.3" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="secrets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="arcane" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arcane" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
               <item name="ruby-progressbar-1.10.1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -726,6 +844,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -734,11 +853,63 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563532787580" />
-    <property name="last_opened_file_path" value="$USER_HOME$/dev/luminor_fallback/psd2fallback" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564136634975" />
+    <property name="last_opened_file_path" value="$USER_HOME$/dev/ibsdemo-front" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable" />
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/omniauth-google-oauth2-0.7.0/examples" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/nio4r-2.3.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/simplecov-html-0.10.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/concurrent-ruby-1.1.5" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/selenium-webdriver-3.142.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/mimemagic-0.3.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/mini_mime-1.0.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/bindex-0.7.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/method_source-0.9.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/thread_safe-0.3.6" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/docile-1.3.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/json-2.2.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/tilt-2.0.9" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/rake-12.3.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/mini_portile2-2.4.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/httparty-0.17.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/crass-1.0.4" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/public_suffix-3.1.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/rb-fsevent-0.10.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/regexp_parser-1.5.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/bootstrap-4.0.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/autoprefixer-rails-9.6.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/rb-inotify-0.10.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/jbuilder-2.9.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/msgpack-1.3.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/bootsnap-1.4.4" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/addressable-2.6.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/chromedriver-helper-2.1.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/jquery-rails-4.3.5" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/oauth2-1.4.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.11.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/bcrypt-3.1.13" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/orm_adapter-0.5.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/jwt-2.2.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/ast-2.4.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/uglifier-4.1.20" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/rainbow-3.0.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/loofah-2.2.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/warden-1.2.8" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/omniauth-google-oauth2-0.7.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/spring-watcher-listen-2.0.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/omniauth-1.9.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/parser-2.6.3.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/childprocess-1.0.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/multipart-post-2.1.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/gems/omniauth-oauth2-1.6.0" />
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -769,7 +940,14 @@
       <workItem from="1563295487142" duration="269000" />
       <workItem from="1563354925890" duration="31741000" />
       <workItem from="1563456178297" duration="2406000" />
-      <workItem from="1563470975431" duration="20411000" />
+      <workItem from="1563470975431" duration="21093000" />
+      <workItem from="1563801457249" duration="1464000" />
+      <workItem from="1563867283254" duration="644000" />
+      <workItem from="1563886042783" duration="867000" />
+      <workItem from="1563887821913" duration="759000" />
+      <workItem from="1563888599737" duration="1495000" />
+      <workItem from="1563951725512" duration="2000" />
+      <workItem from="1564055039723" duration="10217000" />
     </task>
     <task id="LOCAL-00001" summary="added  some styles to welcome and home page">
       <created>1562252055262</created>
@@ -785,17 +963,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563488958114</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chart collection moved to rates_controller">
+      <created>1563532859619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563532859619</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110074000" />
+    <option name="totallyTimeSpent" value="126204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12966916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27481323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -803,7 +988,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="7" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -815,9 +999,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.29474813" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" weight="0.29474813" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -896,37 +1081,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added  some styles to welcome and home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added  some styles to welcome and home page" />
+    <MESSAGE value="chart collection moved to rates_controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="chart collection moved to rates_controller" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/devise-4.6.2/app/controllers/devise_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exchange_rates/rate.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/models/user_exchange_rate.rb" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/exchange_rates_controller.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/exchange_rates/new.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/views/pages/show.html.erb.html" />
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190704100452_add_omniauth_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190704150120_add_image_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190711121055_create_rates.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -964,13 +1122,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/edit.html.erb" />
     <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/chartkick-3.2.1/vendor/assets/javascripts/chartkick.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1440" />
@@ -983,27 +1135,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,27 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rates/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rates/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="122" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rates/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1071,13 +1186,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/simplecov-html-0.10.2/.rubocop.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/rate.rb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1110,55 +1218,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb.html" />
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1169,21 +1235,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/railties-5.2.3/lib/rails/commands/secrets/secrets_command.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/railties-5.2.3/lib/rails/secrets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/storage.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/bundle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/master.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/credentials.yml.enc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/rates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="240">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rates/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rates/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="222" column="1" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rates/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="420">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rates/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>

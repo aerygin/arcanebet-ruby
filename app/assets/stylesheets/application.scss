@@ -10,6 +10,15 @@ a:hover {
   color: #fff;
 }
 
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
 .app-btn {
   padding: 7px 45px;
   font-size: 18px;
@@ -21,6 +30,9 @@ a:hover {
   margin-right: 30px;
 }
 
+.mobile-span, .mobile-table {
+  display: none;
+}
 
 .form-wrapper {
   margin-top: 40px;
@@ -32,6 +44,10 @@ a:hover {
   font-size: 25px;
 }
 
+.field_with_errors {
+  display: inline;
+}
+
 table td {
   vertical-align: unset;
   text-align: center;
@@ -41,7 +57,7 @@ table th {
   text-align: center;
 }
 
-.header {
+.header, .show-header {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -122,4 +138,113 @@ table {
   font-weight: 600;
   font-size: 18px;
   margin: 20px 0;
+}
+
+.show-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-header {
+  margin-top: 100px;
+}
+
+.home-mobile {
+  display: none;
+}
+
+.rates-header {
+  text-align: center;
+}
+
+
+@media (max-width: 699px) {
+  .mobile-span {
+    display: inline-block;
+    width: 45%;
+    font-weight: 600;
+    float: left;
+  }
+
+  .full-table {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .mobile-table {
+    display: block;
+  }
+  .show-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .show-header {
+    margin-top: 50px;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .tableRow {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 7px;
+  }
+
+  .table td {
+    border: none;
+  }
+
+  .tableRow:nth-child(2n+1) {
+    background-color: #f3f3f1;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  tr {
+    height: unset;
+  }
+
+  .app-button, .app-btn {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .edit-new-header {
+    text-align: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    font-size: 20px;
+  }
+
+  .main-menu-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .home-full {
+    display: none;
+  }
+
+  .home-mobile {
+    display: inline;
+    color:#FFF;
+    margin-top: 35px;
+  }
 }

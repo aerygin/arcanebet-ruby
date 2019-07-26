@@ -8,7 +8,7 @@ class RatesController < ApplicationController
   def show
     @result = []
     @rate = Rate.find(params[:id])
-    access_key = '69a46a5b9ca5029a744162e772a6532f'
+    access_key = Rails.application.credentials.api_access_key
     base = @rate.base_currency
     target = @rate.target_currency
     amount = @rate.amount
@@ -57,7 +57,7 @@ class RatesController < ApplicationController
     @rate = Rate.find(params[:id])
     if
       @rate.user_id != current_user.id
-      redirect_to edit_rate_path
+      redirect_to rates_path
     end
   end
 

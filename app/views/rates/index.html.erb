@@ -4,18 +4,18 @@
     <br>
 
     <% if @rates.length < 1 %>
-      <div class="no-rates">You have no exchange pairs created! Please create a new one.</div>
+      <div class="no-rates rates-header">You have no exchange pairs created! Please create a new one.</div>
     <% end %>
 
     <% if @rates.length >= 1 %>
-      <h4>Your exchange rate pairs:</h4>
+      <h4 class="rates-header">Your exchange rate pairs:</h4>
       <table class="table">
-        <thead>
+        <thead class="table-header">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Base</th>
           <th scope="col">Target</th>
-          <th scope="col">Base amout</th>
+          <th scope="col">Base amount</th>
           <th scope="col">Weeks</th>
           <th scope="col">Edit</th>
           <th scope="col">Delete</th>
@@ -25,22 +25,46 @@
         <tbody>
         <% @rates.each_with_index do |item, index| %>
 
-          <tr>
-            <th scope="row"><%= index + 1 %></th>
-            <td><%= item["base_currency"] %></td>
-            <td><%= item["target_currency"] %></td>
-            <td><%= item["amount"] %></td>
-            <td><%= item["weeks"] %></td>
-            <td><%=link_to  fa_icon("pencil",:class => "icon"), edit_rate_path(item["id"])%></td>
-            <td><%=link_to  fa_icon("trash",:class => "icon"), rate_path(item["id"]), :method => :delete %></td>
-            <td><%=link_to  fa_icon("arrow-right",:class => "icon"), rate_path(item["id"])%></td>
+          <tr class="tableRow">
+            <td>
+              <span class="mobile-span">#</span>
+              <span><%= index + 1 %></span><%= index + 1 %>
+            </td>
+            <td>
+              <span class="mobile-span">Base</span>
+              <span><%= item["base_currency"] %></span>
+            </td>
+            <td>
+              <span class="mobile-span">Target</span>
+              <span><%= item["target_currency"] %></span>
+            </td>
+            <td>
+              <span class="mobile-span">Base amount</span>
+              <span><%= item["amount"] %></span>
+            </td>
+            <td>
+              <span class="mobile-span">Weeks</span>
+             <span><%= item["weeks"] %></span>
+            </td>
+            <td>
+              <span class="mobile-span">Edit</span>
+              <%=link_to  fa_icon("pencil",:class => "icon"), edit_rate_path(item["id"])%>
+            </td>
+            <td>
+              <span class="mobile-span">Delete</span>
+              <%=link_to  fa_icon("trash",:class => "icon"), rate_path(item["id"]), :method => :delete %>
+            </td>
+            <td>
+              <span class="mobile-span">Calculations</span>
+              <%=link_to  fa_icon("arrow-right",:class => "icon"), rate_path(item["id"])%>
+            </td>
           </tr>
         <% end %>
         </tbody>
       </table>
     <% end %>
 
-    <%= link_to "Add new pair", new_rate_path, :class => "btn btn-primary" %>
+    <%= link_to "Add new pair", new_rate_path, :class => "btn btn-primary app-button" %>
   </div>
 </div>
 
