@@ -7,6 +7,7 @@ class RatesController < ApplicationController
 
   def show
     @result = []
+    pust "test"
     @rate = Rate.find(params[:id])
     access_key = Rails.application.credentials.api_access_key
     base = @rate.base_currency
