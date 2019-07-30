@@ -3,7 +3,6 @@
     <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
     <h2><%= @rate.base_currency %> to <%= @rate.target_currency %> (amount : <%= @rate.amount %>)</h2>
   </div>
-  <% if @success %>
   <div class="show-wrapper">
     <table class="table">
       <thead class="table-header">
@@ -54,10 +53,9 @@
     <%= line_chart @result_collection_for_chart%>
     <div style="margin-top: 30px"></div>
   </div>
-    <% end %>
-  <% if !@success %>
+ <!-- <%# if !@success %>
   <div class="error-div"> Something went wrong,please try again.</div>
-  <% end %>
+  <%# end %>-->
   <%= @cac %>
 </div>
 
