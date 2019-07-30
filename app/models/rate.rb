@@ -27,22 +27,20 @@ class Rate < ApplicationRecord
   end
 
   def get_sorted_result
+    Rails.cache.fetch("/rates/#{id}-#{updated_at}/", :expires_in => 12.hours) do
     result = []
     date = Time.now.utc.to_date
     date_str = date.strftime('%Y-%m-%d')
-    Rails.cache.fetch("/rates/#{id}-#{updated_at}/", :expires_in => 12.hours) do
-      weeks.times do
+    weeks.times do
         response_from_api = fixer_request(date_str)
         if response_from_api.parsed_response["success"]
           result.push(response_from_api.parsed_response)
           date = date - 7
           date_str = date.strftime('%Y-%m-%d')
-        else
-          break
         end
       end
-    end
     result.sort {|b, a| a['date'] <=> b['date']}
+    end
   end
 
   def fixer_request(date_str)
@@ -75,11 +73,11 @@ class Rate < ApplicationRecord
   end
 
   def find_max_rate(array)
-    array.max_by {|x| x[:exchange_rate]}
+    array.max_by {|x| x[:exchange_rate]}[:exchange_rate]
   end
 
   def find_min_rate(array)
-    array.min_by {|x| x[:exchange_rate]}
+    array.min_by {|x| x[:exchange_rate]}[:exchange_rate]
   end
 
   def get_week_nr(item)
