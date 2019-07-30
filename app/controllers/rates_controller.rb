@@ -13,8 +13,11 @@ class RatesController < ApplicationController
       return render 'pages/index.html.erb'
     end
     @result = @rate.calculation
+    (@result.empty?)? @success = false : @success = true
+    if @success
     @result_collection_for_chart = @rate.generate_collection_for_chart(@result)
     calculate_rates
+    end
   end
 
   def new
@@ -58,7 +61,6 @@ class RatesController < ApplicationController
     redirect_to_home
   end
 
-  private
   def redirect_to_home
     path = rates_path
     redirect_to path
