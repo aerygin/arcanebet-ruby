@@ -75,11 +75,11 @@ class Rate < ApplicationRecord
   end
 
   def find_max_rate(array)
-    array.max_by {|x| x['rates'][target_currency]}['rates'][target_currency]
+    array.max_by {|x| x[:exchange_rate]}
   end
 
   def find_min_rate(array)
-    array.min_by {|x| x['rates'][target_currency]}['rates'][target_currency]
+    array.min_by {|x| x[:exchange_rate]}
   end
 
   def get_week_nr(item)
