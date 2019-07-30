@@ -6,34 +6,18 @@ class RatesController < ApplicationController
   end
 
   def show
-    @result = []
     @rate = Rate.find(params[:id])
-    access_key = Rails.application.credentials.api_access_key
-    base = @rate.base_currency
-    target = @rate.target_currency
-    amount = @rate.amount
-    weeks  = @rate.weeks
-    date = Time.now.utc.to_date
-    date_str = date.strftime('%Y-%m-%d')
-    weeks.times do
-      response = HTTParty.get('http://data.fixer.io/api/' + date_str + '?access_key=' + access_key + '&base=' + base + '&symbols=' + target,
-                              :headers => { 'Content-Type' => 'application/json' })
+    @cac = Rails.cache
 
-      exchange_rate = response['rates'][target]
-      new_amount = amount * exchange_rate
-      response = Hash['converted_amount', '%f' % new_amount,
-                      'week_nr', date.strftime('%U').to_i,
-                      'year', date.strftime('%Y')]
-                     .merge(response)
-      @result.push(response)
-      date = date - 7
-      date_str = date.strftime('%Y-%m-%d')
-
+    if !current_user.present? || current_user.id != @rate.user_id
+      return render 'pages/index.html.erb'
     end
-
-    @result = @result.sort { |b, a| a['date'] <=> b['date'] }
-    find_rates(@result, target)
-    @result_collection_for_chart = @result.collect {|i| [i["date"], i["rates"][@rate.target_currency]]}
+    @result = @rate.calculation
+    @result.length > 1? @success = true  : @success = false
+    if @success
+    @result_collection_for_chart = @rate.generate_collection_for_chart(@result)
+    calculate_rates
+    end
   end
 
   def new
@@ -83,11 +67,9 @@ class RatesController < ApplicationController
     redirect_to path
   end
 
-  private
-  def find_rates(array, currency)
-    @max_rate = array.max_by{ |x| x['rates'][currency] }['rates'][currency]
-    @min_rate = array.min_by{ |x| x['rates'][currency] }['rates'][currency]
-    @today_rate = array[0]['rates'][currency]
+  def calculate_rates
+    @today_rate = @rate.find_today_rate(@result)
+    @max_rate = @rate.find_max_rate(@result)
+    @min_rate = @rate.find_min_rate(@result)
   end
-
 end

@@ -3,6 +3,7 @@
     <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
     <h2><%= @rate.base_currency %> to <%= @rate.target_currency %> (amount : <%= @rate.amount %>)</h2>
   </div>
+  <% if @success %>
   <div class="show-wrapper">
     <table class="table">
       <thead class="table-header">
@@ -19,7 +20,7 @@
       <% @result.each_with_index do |item, index| %>
 
         <tr class="tableRow">
-          <% rate = item["rates"][@rate.target_currency] %>
+          <% rate = item[:exchange_rate] %>
           <td>
             <span class="mobile-span">#</span>
             <span> <%= index + 1 %></span>
@@ -29,22 +30,21 @@
             <span><%= item["date"] %></span></td>
           <td>
             <span class="mobile-span">Week number</span>
-            <span><%= item["week_nr"] %></span>
+            <span><%= item[:week_nr] %></span>
           </td>
           <td class="<%= 'max-rate' if rate == @max_rate %>
                      <%= 'min-rate' if rate == @min_rate %>">
             <span class="mobile-span">Exchange rate</span>
-            <span><%= item["rates"][@rate.target_currency] %></span>
+            <span><%= number_with_precision(item[:exchange_rate], :precision => 4) %></span>
           </td>
            <td>
             <span class="mobile-span">Amount</span>
-            <span><%= item["converted_amount"] %></span>
+            <span><%= number_with_precision(item[:converted_amount], :precision => 4) %></span>
            </td>
-          <% difference = item["converted_amount"].to_f - (@today_rate * @rate.amount) %>
-          <td class="<%= difference > 0 ? 'profit' : 'loss' %>
+          <td class="<%= item[:difference] > 0 ? 'profit' : 'loss' %>
                     <%= 'neutral' if rate== @today_rate %>">
             <span class="mobile-span">Profit/loss</span>
-            <span> <%= rate== @today_rate? "---" : number_with_precision(difference, :precision => 2) %></span>
+            <span> <%= rate== @today_rate? "---" : number_with_precision(item[:difference], :precision => 4) %></span>
           </td>
         </tr>
       <% end %>
@@ -54,6 +54,11 @@
     <%= line_chart @result_collection_for_chart%>
     <div style="margin-top: 30px"></div>
   </div>
+    <% end %>
+  <% if !@success %>
+  <div class="error-div"> Something went wrong,please try again.</div>
+  <% end %>
+  <%= @cac %>
 </div>
 
 
