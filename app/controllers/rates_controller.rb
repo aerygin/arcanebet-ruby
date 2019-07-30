@@ -13,11 +13,8 @@ class RatesController < ApplicationController
       return render 'pages/index.html.erb'
     end
     @result = @rate.calculation
-    @result.length > 1? @success = true  : @success = false
-    if @success
     @result_collection_for_chart = @rate.generate_collection_for_chart(@result)
     calculate_rates
-    end
   end
 
   def new
