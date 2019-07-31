@@ -1,9 +1,7 @@
+# frozen_string_literal: true
+
 class PagesController < ApplicationController
-  def index
+  def index; end
 
-  end
-
-  def home
-  end
-
+  def home; end
 end

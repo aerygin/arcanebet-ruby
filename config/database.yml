@@ -21,8 +21,9 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
-  username: arcanebet
-  password: password1
+  username: <%= Rails.application.credentials.dig(:postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:postgres_password) %>
+
 
 development:
   <<: *default
@@ -84,7 +85,5 @@ test:
 production:
   <<: *default
   database: arcane_production
-  #username: arcane
-  #password: <%= ENV['ARCANE_DATABASE_PASSWORD'] %>
-  username: arcanebet
-  password: password1
+  username: <%= Rails.application.credentials.dig(:postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:postgres_password) %>

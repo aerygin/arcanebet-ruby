@@ -7,17 +7,14 @@ class RatesController < ApplicationController
 
   def show
     @rate = Rate.find(params[:id])
-    @cac = Rails.cache
-
     if !current_user.present? || current_user.id != @rate.user_id
       return render 'pages/index.html.erb'
     end
     @result = @rate.calculation
-    (@result.empty?)? @success = false : @success = true
-    if @success
-    @result_collection_for_chart = @rate.generate_collection_for_chart(@result)
-    calculate_rates
-    end
+    @success = @result.empty? ? false : true
+    @result_collection_for_chart =
+        @rate.generate_collection_for_chart(@result) if @success
+    calculate_rates if @success
   end
 
   def new
@@ -25,23 +22,22 @@ class RatesController < ApplicationController
   end
 
   def create
-      @rate = Rate.new(base_currency: params[:base_currency],
-                       target_currency: params[:target_currency],
-                       amount: params[:rate][:amount],
-                       weeks: params[:rate][:weeks],
-                       user_id: current_user.id)
-      if @rate.save
-        redirect_to_home
-      else
-        render 'new'
-      end
+    @rate = Rate.new(base_currency: params[:base_currency],
+                     target_currency: params[:target_currency],
+                     amount: params[:rate][:amount],
+                     weeks: params[:rate][:weeks],
+                     user_id: current_user.id)
+    if @rate.save
+      redirect_to_home
+    else
+      render 'new'
+    end
   end
 
   def edit
     @rate = Rate.find(params[:id])
-    if
-      @rate.user_id != current_user.id
-      redirect_to rates_path
+    if !current_user.present? || current_user.id != @rate.user_id
+      render 'pages/index.html.erb'
     end
   end
 
