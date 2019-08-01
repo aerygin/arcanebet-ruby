@@ -17,22 +17,23 @@ class Rate < ApplicationRecord
                             HRK HUF IDR ILS INR JPY KRW MXN MYR NOK NZD
                             PHP PLN RON RUB SEK SGD THB TRY USD ZAR].freeze
 
-  ACCESS_KEY = Rails.application.credentials.api_access_key
+  ACCESS_KEY = Rails.application.credentials.dig(:api_access_key)
+  BASE_URL = 'http://data.fixer.io/api/'
+
+  def cached_result
+    Rails.cache.fetch("/rates/#{id}-#{updated_at}/", expires_in: 12.hours) do
+      calculation
+    end
+  end
 
   def calculation
-    sorted_result_array = fixer_request_caching
+    sorted_result_array = handle_fixer_request
     today_rate = find_today_rate(sorted_result_array)
     sorted_result_array.each do |item|
       item.merge!(push_data_to_response(item))
       item.merge!(difference: calculate_profit_loss(today_rate, item))
     end
     sorted_result_array
-  end
-
-  def fixer_request_caching
-    Rails.cache.fetch("/rates/#{id}-#{updated_at}/", expires_in: 12.hours) do
-      handle_fixer_request
-    end
   end
 
   def handle_fixer_request
@@ -43,14 +44,13 @@ class Rate < ApplicationRecord
       response_from_api = fixer_request(date_str)
       next unless response_from_api.parsed_response['success']
       result.push(response_from_api.parsed_response)
-      date -= 7
-      date_str = date.strftime('%Y-%m-%d')
+      date_str = (date -= 7).strftime('%Y-%m-%d')
     end
     result.sort { |b, a| a['date'] <=> b['date'] }
   end
 
   def fixer_request(date_str)
-    self.class.get('http://data.fixer.io/api/' + date_str +
+    self.class.get(BASE_URL + date_str +
                        '?access_key=' + ACCESS_KEY +
                        '&base=' + base_currency +
                        '&symbols=' + target_currency,

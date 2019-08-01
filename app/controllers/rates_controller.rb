@@ -11,7 +11,7 @@ class RatesController < ApplicationController
       return render 'pages/index.html.erb'
     end
 
-    @result = @rate.calculation
+    @result = @rate.cached_result
     @success = @result.empty? ? false : true
     if @success
       @result_collection_for_chart =

@@ -92,6 +92,10 @@ class RateTest < ActiveSupport::TestCase
                     weeks: 1,
                     base_currency: 'EUR',
                     target_currency: 'USD')
-    assert_not_equal(nil, rate.fixer_request_caching)
+    assert_not_equal(nil, rate.cached_result)
+  end
+
+  test 'calculation ' do
+    assert_not_equal(nil,RATE.calculation)
   end
 end
