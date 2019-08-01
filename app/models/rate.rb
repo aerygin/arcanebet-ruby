@@ -13,11 +13,11 @@ class Rate < ApplicationRecord
                      format: { with: /\A\d+(?:\.\d{0,2})?\z/ }
   validates :weeks, presence: true,
                     numericality: { greater_than: 0, less_than_or_equal_to: 25 }
-  # AVAILABLE_CURRENCIES = %w(AUD BGN BRL CAD CHF CNY CZK DKK EUR GBP HKD
-  # HRK HUF IDR ILS INR JPY KRW MXN MYR NOK NZD
-  # PHP PLN RON RUB SEK SGD THB TRY USD ZAR)
-  AVAILABLE_CURRENCIES = %w[EUR USD].freeze
-  ACCESS_KEY = Rails.application.credentials.api_free_access_key
+  AVAILABLE_CURRENCIES = %w[AUD BGN BRL CAD CHF CNY CZK DKK EUR GBP HKD
+                            HRK HUF IDR ILS INR JPY KRW MXN MYR NOK NZD
+                            PHP PLN RON RUB SEK SGD THB TRY USD ZAR].freeze
+
+  ACCESS_KEY = Rails.application.credentials.api_access_key
 
   def calculation
     sorted_result_array = fixer_request_caching

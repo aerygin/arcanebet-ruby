@@ -10,11 +10,14 @@ class RatesController < ApplicationController
     if !current_user.present? || current_user.id != @rate.user_id
       return render 'pages/index.html.erb'
     end
+
     @result = @rate.calculation
     @success = @result.empty? ? false : true
-    @result_collection_for_chart =
-        @rate.generate_collection_for_chart(@result) if @success
-    calculate_rates if @success
+    if @success
+      @result_collection_for_chart =
+          @rate.generate_collection_for_chart(@result)
+      calculate_rates
+    end
   end
 
   def new
