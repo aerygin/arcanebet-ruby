@@ -3,7 +3,7 @@
     <%= link_to fa_icon("arrow-left", :class => "icon back-btn"), rates_path %>
     <h2><%= @rate.base_currency %> to <%= @rate.target_currency %> (amount : <%= @rate.amount %>)</h2>
   </div>
-  <% if @success %>
+  <% if @result.success? %>
   <div class="show-wrapper">
     <table class="table">
       <thead class="table-header">
@@ -17,7 +17,7 @@
       </tr>
       </thead>
       <tbody>
-      <% @result.each_with_index do |item, index| %>
+      <% @result.response.each_with_index do |item, index| %>
 
         <tr class="tableRow">
           <% rate = item[:exchange_rate] %>
@@ -32,8 +32,8 @@
             <span class="mobile-span">Week number</span>
             <span><%= item[:week_nr] %></span>
           </td>
-          <td class="<%= 'max-rate' if rate == @max_rate %>
-                     <%= 'min-rate' if rate == @min_rate %>">
+          <td class="<%= 'max-rate' if rate == @result.max_rate %>
+                     <%= 'min-rate' if rate == @result.min_rate %>">
             <span class="mobile-span">Exchange rate</span>
             <span><%= number_with_precision(item[:exchange_rate], :precision => 4) %></span>
           </td>
@@ -42,20 +42,20 @@
             <span><%= number_with_precision(item[:converted_amount], :precision => 4) %></span>
            </td>
           <td class="<%= item[:difference] > 0 ? 'profit' : 'loss' %>
-                    <%= 'neutral' if rate== @today_rate %>">
+                    <%= 'neutral' if rate== @result.today_rate %>">
             <span class="mobile-span">Profit/loss</span>
-            <span> <%= rate== @today_rate? "---" : number_with_precision(item[:difference], :precision => 4) %></span>
+            <span> <%= rate== @result.today_rate ? "---" : number_with_precision(item[:difference], :precision => 4) %></span>
           </td>
         </tr>
       <% end %>
       </tbody>
     </table>
     <div style="margin-top: 30px"></div>
-    <%= line_chart @result_collection_for_chart%>
+    <%= line_chart @result.chart_data%>
     <div style="margin-top: 30px"></div>
   </div>
     <% end %>
-  <% if !@success %>
+  <% unless @result.success? %>
   <div class="error-div"> Something went wrong,please check your currencies.</div>
   <% end %>
 </div>

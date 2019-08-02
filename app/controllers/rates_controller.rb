@@ -11,13 +11,7 @@ class RatesController < ApplicationController
       return render 'pages/index.html.erb'
     end
 
-    @result = @rate.cached_result
-    @success = @result.empty? ? false : true
-    if @success
-      @result_collection_for_chart =
-          @rate.generate_collection_for_chart(@result)
-      calculate_rates
-    end
+    @result = ::Fixer::Service.new(@rate).calculate
   end
 
   def new
@@ -63,11 +57,5 @@ class RatesController < ApplicationController
   def redirect_to_home
     path = rates_path
     redirect_to path
-  end
-
-  def calculate_rates
-    @today_rate = @rate.find_today_rate(@result)
-    @max_rate = @rate.find_max_rate(@result)
-    @min_rate = @rate.find_min_rate(@result)
   end
 end

@@ -95,7 +95,7 @@ class RateTest < ActiveSupport::TestCase
     assert_not_equal(nil, rate.cached_result)
   end
 
-  test 'calculation ' do
-    assert_not_equal(nil,RATE.calculation)
+  test 'calculation' do
+    assert_not_equal(nil, RATE.calculation)
   end
 end
