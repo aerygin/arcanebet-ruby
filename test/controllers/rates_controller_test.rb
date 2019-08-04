@@ -5,7 +5,7 @@ require 'test_helper'
 class RatesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @rate = rates(:one)
-    @user = users(:one)
+    @current_user = users(:one)
   end
 
   test 'show rate' do
@@ -28,14 +28,5 @@ class RatesControllerTest < ActionDispatch::IntegrationTest
   test 'show new rate' do
     get new_rate_url(@rate)
     assert_response :success
-  end
-
-  test 'test' do
-    get '/rates/new'
-    assert_response :success
-
-    #     post "/rates" ,
-    #         params: {base_currency: "EUR", target_currency: "USD", amount: 10 , weeks: 10, user_id: @user.id}
-    #     assert_response :redirect
   end
 end
