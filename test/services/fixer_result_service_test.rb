@@ -13,8 +13,8 @@ class FixerResultServiceTest < ActiveSupport::TestCase
     @result = ::Fixer::Service.new(RATE).calculate
   end
 
-  test 'calculation result not nil' do
-    assert_not_equal(nil, @result)
+  test 'calculation was successful' do
+    assert_equal(true, @result.response.any?)
   end
 
   test 'first date in array is today date' do
