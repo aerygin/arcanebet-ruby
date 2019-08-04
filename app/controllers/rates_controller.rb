@@ -7,9 +7,7 @@ class RatesController < ApplicationController
 
   def show
     @rate = Rate.find(params[:id])
-    if !current_user.present? || current_user.id != @rate.user_id
-      return render 'pages/index.html.erb'
-    end
+    return render 'pages/index.html.erb' if !current_user.present? || current_user.id != @rate.user_id
 
     @result = ::Fixer::Service.new(@rate).calculate
   end
@@ -33,9 +31,7 @@ class RatesController < ApplicationController
 
   def edit
     @rate = Rate.find(params[:id])
-    if !current_user.present? || current_user.id != @rate.user_id
-      render 'pages/index.html.erb'
-    end
+    render 'pages/index.html.erb' if !current_user.present? || current_user.id != @rate.user_id
   end
 
   def update
